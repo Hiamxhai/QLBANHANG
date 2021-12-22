@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="communityuni.com.ui.SanPhamUl">
+  <grid id="27dc6" binding="pnMain" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="504" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="66684" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <font name="DialogInput" size="28" style="1"/>
+          <foreground color="-4476391"/>
+          <text value="Chương trình quản lí sản phẩm "/>
+        </properties>
+      </component>
+      <scrollpane id="2a778">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="line" title="Danh Sách Sản Phẩm " title-justification="2">
+          <title-color color="-15025328"/>
+          <color color="-15189829"/>
+        </border>
+        <children>
+          <component id="b4309" class="javax.swing.JTable" binding="tblSanPham" custom-create="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="495a8" layout-manager="FormLayout">
+        <rowspec value="center:d:noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <rowspec value="top:4dlu:noGrow"/>
+        <rowspec value="center:max(d;4px):noGrow"/>
+        <colspec value="fill:d:noGrow"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="line" title="Chi Tiết Sản Phẩm ">
+          <color color="-15057477"/>
+        </border>
+        <children>
+          <grid id="d5487" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="488c1" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <preferredSize width="100" height="16"/>
+                  <text value="Mã Sản Phẩm "/>
+                </properties>
+              </component>
+              <component id="6063" class="javax.swing.JTextField" binding="txtMa">
+                <constraints/>
+                <properties>
+                  <columns value="36"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="11942" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="106f7" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <preferredSize width="100" height="16"/>
+                  <text value="Tên Sản Phẩm"/>
+                </properties>
+              </component>
+              <component id="8986b" class="javax.swing.JTextField" binding="txtTen">
+                <constraints/>
+                <properties>
+                  <columns value="36"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="14d07" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <forms/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="279df" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <preferredSize width="100" height="16"/>
+                  <text value="Đơn giá "/>
+                </properties>
+              </component>
+              <component id="34166" class="javax.swing.JTextField" binding="txtGia">
+                <constraints/>
+                <properties>
+                  <columns value="36"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="4bf65" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="39b52" class="javax.swing.JButton" binding="btnThem">
+            <constraints/>
+            <properties>
+              <text value="Thêm"/>
+            </properties>
+          </component>
+          <component id="f699" class="javax.swing.JButton" binding="btnTiep">
+            <constraints/>
+            <properties>
+              <text value="Tiếp"/>
+            </properties>
+          </component>
+          <component id="f8862" class="javax.swing.JButton" binding="btnXoa">
+            <constraints/>
+            <properties>
+              <text value="Xóa"/>
+            </properties>
+          </component>
+          <component id="f3fed" class="javax.swing.JButton" binding="btnThoat">
+            <constraints/>
+            <properties>
+              <text value="Thoát"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
